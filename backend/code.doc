@@ -1,0 +1,18 @@
+CREATE TABLE `barbarshop`.`appointments` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `firstName` VARCHAR(45) NULL,
+  `lastName` VARCHAR(45) NULL,
+  `email` VARCHAR(100) NULL,
+  `phone` VARCHAR(15) NULL,
+  `date` DATE NULL,
+  `description` LONGTEXT NULL,
+  PRIMARY KEY (`id`));
+
+
+
+admin code 
+CREATE TABLE `barbarshop`.`admintable` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));

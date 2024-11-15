@@ -1,0 +1,9 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    z-index: 1;
+    width: 100%;
+    background-color: #96885F;
+}

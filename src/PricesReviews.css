@@ -1,0 +1,119 @@
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Increased translation for visibility */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Base class for elements to animate */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px); /* Match the starting position of the animation */
+    transition: opacity 1s ease, transform 5s ease;
+  }
+  
+  /* Class to trigger animation */
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Main Section Styling */
+  .prices-reviews-section {
+    background-color: #2C2C2C;
+    color: #ffffff;
+    padding: 40px 0;
+    
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #96885f;
+  }
+  
+  .prices-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .prices-content {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #8d8d8d;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+
+  }
+  
+  .price-list {
+    margin-bottom: 30px;
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px dotted #8d8d8d;
+  }
+  
+  .price {
+    color: #96885f;
+    font-weight: bold;
+  }
+  
+  .btn-outline-light {
+    border: 2px solid #96885f;
+    color: #96885f;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #96885f;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Carousel Styling */
+  .services-carousel {
+    padding-top: 20px;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  

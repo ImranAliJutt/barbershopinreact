@@ -1,0 +1,120 @@
+/* BookAppointment.css */
+
+/* Appointment Section Styling */
+.appointment-section {
+  background-color: #2C2C2C;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #96885f;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: #3C3C3C 1px solid;
+  padding: 20px;
+  background-color: #1C1C1C;
+  border-radius: 5px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #2C2C2C;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8d8d8d;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #3C3C3C;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #96885f;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #7c704e;
+}
+
+/* Text Section Styling */
+.info-text {
+  color: #ffffff;
+  max-width: 400px;
+  text-align: left;
+}
+
+.info-text h3 {
+  color: #96885f;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.info-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/* Animation for elements on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
