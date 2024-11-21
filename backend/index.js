@@ -12,11 +12,13 @@ app.use(cors()); // Allows cross-origin requests from your frontend
 
 // Connect to MySQL database
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',  // Replace with your MySQL server host
-  user: process.env.DB_USER || 'root',       // Replace with your MySQL username
-  password: process.env.DB_PASS || 'root',   // Replace with your MySQL password
-  database: process.env.DB_NAME || 'barbarshop', // Your database name
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || '',
+  database: process.env.DB_NAME || 'barbershop',
+  port: process.env.DB_PORT || 3306,
 });
+
 
 // Establish connection to the database
 db.connect((err) => {
